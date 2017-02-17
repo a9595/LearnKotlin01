@@ -51,7 +51,11 @@ public class Main {
             println(getUser())
 
             // Extension function
-            
+            val strGreeting = "hello"
+            println("isGreeting = ${strGreeting.isGreeting()}")
+            println("isHello = ${strGreeting.isHello()}") // func imported from other Kotlin file
+
+            //
         }
 
         fun String.isGreeting() = equals("hello")
